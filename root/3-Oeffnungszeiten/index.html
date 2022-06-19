@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Kebab Brothers | Öffnungszeiten</title>
+		<link rel="stylesheet" type="text/css" href="../../stylesheets/main.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<!-- Add a logo picture -->
+				<img class="logo-picture" src="../../assets/images/logo.jpg" alt="Kebab Brothers Logo">
+				<!-- Make a cool "logo" name -->
+				<a class="logo" href="../0-Home/index.html">Kebab <span class="logo-span">Brothers</span></a>
+				<!-- Create Hamburger Menu for small devices "#" -->
+				<img class="mobile-menu-open mobile-menu" id="mmo-oeffnungszeiten" src="../../assets/essentials/hamburger-menu.png" alt="Open Menu">
+				
+				<nav id="nb-oeffnungszeiten" class="navbar">
+					<!-- Create Close Element "X" -->
+					<p class="mobile-menu-close mobile-menu" id="mmc-oeffnungszeiten">X</p>			
+					<!-- Create navigation items as an unordered list -->
+					<ul class="navigation-items">
+						<li><a class="other-pages" href="../0-Home/index.html">Home</a></li>
+						<li><a class="other-pages" href="../1-Speisekarte/index.html">Speisekarte</a></li>
+						<li><a class="other-pages" href="../2-Angebote/index.html">Angebote</a></li>
+						<li><a class="current-page" href="#">Öffnungszeiten</a></li>
+						<li><a class="other-pages" href="../4-Kontakt/index.html">Kontakt</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+		<section class="hero">
+			<div class="container">
+				<!-- Website main content here -->
+				<h2 id="oeffnungszeiten-header">Öffnungszeiten & Lieferzeiten</h2>
+				<dl id="oeffnungszeiten-dl">
+					<dt>Montag</dt>
+					<dd class="oeffnungszeiten-dd">Ruhetag</dd>
+					<br>
+					<dt>Dienstag</dt>
+					<dd class="oeffnungszeiten-dd">Ruhetag</dd>
+					<br>
+					<dt>Mittwoch</dt>
+					<dd class="oeffnungszeiten-dd">11:00 - 14:00 Uhr & 16:30 - 22:00 Uhr</dd>
+					<br>
+					<dt>Donnerstag</dt>
+					<dd class="oeffnungszeiten-dd">11:00 - 14:00 Uhr & 16:30 - 22:00 Uhr</dd>
+					<br>
+					<dt>Freitag</dt>
+					<dd class="oeffnungszeiten-dd">11:00 - 14:00 Uhr & 16:30 - 23:00 Uhr</dd>
+					<br>
+					<dt>Samstag</dt>
+					<dd class="oeffnungszeiten-dd">16:00 - 23:00 Uhr</dd>
+					<br>
+					<dt>Sonntag</dt>
+					<dd class="oeffnungszeiten-dd">13:00 - 22:00 Uhr</dd>
+					<br>
+				</dl>
+				<p class="deliver-info">ab 18 Euro liefern wir innerhalb Lingen,</p>
+				<p class="deliver-info" id="deliver-info-2">ab 30 Euro liefern wir außerhalb</p>
+			</div>
+		</div>
+		
+		<section class="footer">
+			<div class="container">
+				<a class="impressum-footer" href="../A-Impressum/index.html">Impressum</a>
+			</div>
+		</div>
+
+		<script lang="java-script">
+			const mmoOeffnungszeiten = document.getElementById('mmo-oeffnungszeiten');
+			const mmcOeffnungszeiten = document.getElementById('mmc-oeffnungszeiten');
+			const navOeffnungszeiten = document.getElementById('nb-oeffnungszeiten');
+
+			mmoOeffnungszeiten.addEventListener('click', () => {
+				navOeffnungszeiten.classList.add('menu-btn');
+			})
+
+			mmcOeffnungszeiten.addEventListener('click', () => {
+				navOeffnungszeiten.classList.remove('menu-btn');
+			})
+		</script>
+	</body>
+</html>

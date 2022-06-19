@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Kebab Brothers | Kontakt</title>
+		<link rel="stylesheet" type="text/css" href="../../stylesheets/main.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<!-- Add a logo picture -->
+				<img class="logo-picture" src="../../assets/images/logo.jpg" alt="Kebab Brothers Logo">
+				<!-- Make a cool "logo" name -->
+				<a class="logo" href="../0-Home/index.html">Kebab <span class="logo-span">Brothers</span></a>
+				<!-- Create Hamburger Menu for small devices "#" -->
+				<img id="mmo-kontakt" class="mobile-menu-open mobile-menu" src="../../assets/essentials/hamburger-menu.png" alt="Open Menu">
+				
+				<nav id="nb-kontakt" class="navbar">
+					<!-- Create Close Element "X" -->
+					<p class="mobile-menu-close mobile-menu" id="mmc-kontakt">X</p>	
+					<!-- Create navigation items as an unordered list -->
+					<ul class="navigation-items">
+						<li><a class="other-pages" href="../0-Home/index.html">Home</a></li>
+						<li><a class="other-pages" href="../../root/1-Speisekarte/index.html">Speisekarte</a></li>
+						<li><a class="other-pages" href="../../root/2-Angebote/index.html">Angebote</a></li>
+						<li><a class="other-pages" href="../../root/3-Oeffnungszeiten/index.html">Öffnungszeiten</a></li>
+						<li><a class="current-page" href="#">Kontakt</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+		<section class="hero">
+			<div class="container">
+				<div id="adress-section">
+					<!-- Website main content here -->
+					<h2 id="adress-header">Adresse:</h2>
+					<p id="adress">Kaiserstrasse 15, 49809 Lingen</p>
+					<!-- Put map here -->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.7465660489665!2d7.324671599999999!3d52.5199254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b7864aa53a883f%3A0x6ce9ae4dad67731!2sKebab%20Brothers!5e0!3m2!1sde!2sde!4v1646821578177!5m2!1sde!2sde" description="Kebab Brothers Lingen Map" loading="lazy"></iframe>
+					<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.7465671644372!2d7.322482915807469!3d52.51992537981424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b7864aa53a883f%3A0x6ce9ae4dad67731!2sKebab%20Brothers!5e0!3m2!1sde!2sde!4v1644744768565!5m2!1sde!2sde" width="300" height="250" loading="lazy"> -->
+				</div>
+
+				<div id="phonenumber-section">
+					<h2 id="phonenumber-header">Telefonnummer:</h2>
+					<p id="phonenumber">0591 977 787 14</p>
+					<!-- Make it copyable, or maybe a href to switch into telephone -->
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer" id="impressum-footer-contact" >
+			<div class="container">
+				<a class="impressum-footer" href="../A-Impressum/index.html">Impressum</a>
+			</div>
+		</div>
+		
+		<script lang="java-script">
+			const mmoKontakt = document.getElementById('mmo-kontakt');
+			const mmcKontakt = document.getElementById('mmc-kontakt');
+			const navKontakt = document.getElementById('nb-kontakt');
+
+			mmoKontakt.addEventListener('click', () => {
+				navKontakt.classList.add('menu-btn');
+			})
+
+			mmcKontakt.addEventListener('click', () => {
+				navKontakt.classList.remove('menu-btn');
+			})
+		</script>
+	</body>
+</html>

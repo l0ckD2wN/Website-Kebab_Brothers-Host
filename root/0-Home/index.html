@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Kebab Brothers | Home</title>
+		<link rel="stylesheet" type="text/css" href="../../stylesheets/main.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<!-- Add a logo picture -->
+				<img class="logo-picture" src="../../assets/images/logo.jpg" alt="Kebab Brothers Logo">
+				<!-- Make a cool "logo" name -->
+				<a class="logo" href="#">Kebab <span class="logo-span">Brothers</span></a>
+				<!-- Create Hamburger Menu for small devices "#" -->
+				<img id="mmo-home" class="mobile-menu-open mobile-menu" src="../../assets/essentials/hamburger-menu.png" alt="Open Menu">
+				
+				<nav id="nb-home" class="navbar">
+					<!-- Create Close Element "X" -->
+					<p id="mmc-home" class="mobile-menu-close mobile-meu">X</p>				
+					<!-- Create navigation items as an unordered list -->
+					<ul class="navigation-items">
+						<li><a class="current-page" href="#">Home</a></li>
+						<li><a class="other-pages" href="../1-Speisekarte/index.html">Speisekarte</a></li>
+						<li><a class="other-pages" href="../2-Angebote/index.html">Angebote</a></li>
+						<li><a class="other-pages" href="../3-Oeffnungszeiten/index.html">Öffnungszeiten</a></li>
+						<li><a class="other-pages" href="../4-Kontakt/index.html">Kontakt</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+		<section id="hero-home" class="hero">
+			<div class="container">
+				<!-- Website main content here -->
+				<h1>Offizielle Webseite von Kebab Brothers Lingen</h1>
+				<h2><!-- Info Text --></h2>
+				<p>Um unsere <span>Speisekarte</span> zu sehen, klick <a href="../1-Speisekarte/index.html">hier</a>!</p>
+				<p>Um unsere <span>Angebote</span> zu sehen, klick <a href="../2-Angebote/index.html">hier</a>!</p>
+				<p>Um unsere <span>Öffnungszeiten</span> zu sehen, klick <a href="../3-Oeffnungszeiten/index.html">hier</a>!</p>
+				<p>Um unsere <span>Adresse & Telefonnummer</span> zu sehen, klick <a href="../4-Kontakt/index.html">hier</a>!</p>
+			</div>
+		</div>
+		
+		<section class="footer">
+			<div class="container">
+				<a class="impressum-footer" href="../A-Impressum/index.html">Impressum</a>
+			</div>
+		</section>
+
+		<script lang="java-script">
+			const mmoHome = document.getElementById('mmo-home');
+			const mmcHome = document.getElementById('mmc-home');
+			const navHome = document.getElementById('nb-home');
+
+			mmoHome.addEventListener('click', () => {
+				navHome.classList.add('menu-btn');
+			})
+
+			mmcHome.addEventListener('click', () => {
+				navHome.classList.remove('menu-btn');
+			})
+		</script>
+	</body>
+</html>

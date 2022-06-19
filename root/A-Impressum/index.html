@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="widht=device-width, initial-scale=1.0">
+		<title>Kebab Brothers | Impressum</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../../stylesheets/main.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<!-- Add a logo picture -->
+				<img class="logo-picture" src="../../assets/images/logo.jpg" alt="Kebab Brothers Logo">
+				<!-- Make a cool "logo" name -->
+				<a class="logo" href="../0-Home/index.html">Kebab <span class="logo-span">Brothers</span></a>
+				<!-- Create Hamburger Menu for small devices "#" -->
+				<img id="mmo-impressum" class="mobile-menu-open mobile-menu" src="../../assets/essentials/hamburger-menu.png" alt="Open Menu">
+				
+				<nav id="nb-impressum" class="navbar">
+					<!-- Create Close Element "X" -->
+					<p id="mmc-impressum" class="mobile-menu-close mobile-meu">X</p>		
+					<!-- Create navigation items as an unordered list -->
+					<ul class="navigation-items">
+						<li><a class="other-pages" href="../0-Home/index.html">Home</a></li>
+						<li><a class="other-pages" href="../1-Speisekarte/index.html">Speisekarte</a></li>
+						<li><a class="other-pages" href="../2-Angebote/index.html">Angebote</a></li>
+						<li><a class="other-pages" href="../3-Oeffnungszeiten/index.html">Öffnungszeiten</a></li>
+						<li><a class="other-pages" href="../4-Kontakt/index.html">Kontakt</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+		<section id="hero-impressum" class="hero">
+			<div class="container">
+				<!-- Website main content here -->
+				<div id="german-impressum">
+					<h2>Impressum</h2>
+					<h3>Angaben gemäß § 5 TMG:</h3>
+					<p>Nermine Mehmetaj <br>
+						Kebab Brothers	<br>
+						Kaiserstraße 15 <br>
+						49809 Lingen <br>
+						Kontakt: <br>
+						Telefon: 0591 97778714 <br>
+						Streitschlichtung <br> <br>
+						Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren 
+						vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+				</div>
+
+				<div id="english-impressum">
+					<h4>Impressum - Englische Version</h4>
+					<h3>Notice <br>
+						Information provided according to Sec. 5 German Telemedia Act (TMG):</h3>
+					<p>Nermine Mehmetaj <br>
+						Kebab Brothers <br>
+						Kaiserstraße 15 <br>
+						49809 Lingen <br>
+						Contact: <br>
+						Telephone: 0591 97778714 <br> <br>
+						Dispute resolution <br>
+						We do not take part in online dispute resolutions at consumer arbitration boards.</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="footer">
+			<div class="container">
+				<a class="impressum-footer" href="#">Impressum</a>
+			</div>
+		</section>
+
+		<script lang="java-script">
+			const mmoImpressum = document.getElementById('mmo-impressum');
+			const mmcImpressum = document.getElementById('mmc-impressum');
+			const navImpressum = document.getElementById('nb-impressum');
+
+			mmoImpressum.addEventListener('click', () => {
+				navImpressum.classList.add('menu-btn');
+			})
+
+			mmcImpressum.addEventListener('click', () => {
+				navImpressum.classList.remove('menu-btn');
+			})
+		</script>
+	</body>
+</html>

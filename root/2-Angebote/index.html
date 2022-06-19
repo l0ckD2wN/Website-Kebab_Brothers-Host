@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Kebab Brothers | Angebote</title>
+		<link rel="stylesheet" href="../../stylesheets/main.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<!-- Add a logo picture -->
+				<img class="logo-picture" src="../../assets/images/logo.jpg" alt="Kebab Brothers Logo">
+				<!-- Make a cool "logo" name -->
+				<a class="logo" href="../0-Home/index.html">Kebab <span class="logo-span">Brothers</span></a>
+				<!-- Create Hamburger Menu for small devices "#" -->
+				<img id="mmo-angebote" class="mobile-menu-open mobile-menu" src="../../assets/essentials/hamburger-menu.png" alt="Open Menu">
+					
+				<nav id="nb-angebote" class="navbar">
+					<!-- Create Close Element "X" -->
+					<p id="mmc-angebote" class="mobile-menu-close mobile-menu">X</p>
+					<ul class="navigation-items">
+						<li><a class="other-pages" href="../0-Home/index.html">Home</a></li>
+						<li><a class="other-pages" href="../1-Speisekarte/index.html">Speisekarte</a></li>
+						<li><a class="current-page" href="#">Angebote</a></li>
+						<li><a class="other-pages" href="../3-Oeffnungszeiten/index.html">Öffnungszeiten</a></li>
+						<li><a class="other-pages" href="../4-Kontakt/index.html">Kontakt</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+		<section class="hero">
+			<div class="container">
+				<!-- Website main content here -->
+				<h2 id="action-days">Aktionstage:</h2>
+				<dl class="action-days-table">
+					
+					<dt class="action-days-dt" id="action-days-dt-2">Mittwoch</dt>
+					<dd class="action-days-dd" id="action-days-dd-2">Pizzatag</dd>
+					<dd><p class="offerings-info">Große Pizza nach Wahl (außer Calzone)</p></dd>
+					<dd><p id="offering-info" class="offerings-info">nur von 1 bis 47</p></dd>
+					<dt class="action-days-dt" id="action-days-dt-1">Donnerstag</dt>
+					<dd class="action-days-dd" id="action-days-dd-1">Nudeltag</dd>
+					<dd><p class="offerings-info">Pasta nach Wahl mit Pizzabrot und Beilagensalat</p></dd>
+					<dt class="action-days-dt" id="action-days-dt-3">Donnerstag</dt>
+					<dd class="action-days-dd" id="action-days-dd-3">Schnitzeltag</dd>
+					<dd><p class="offerings-info">Schnitel nach Wahl mit Beilagensalat</p></dd>
+				</dl>
+			</div>
+		</div>
+		
+		<section class="footer">
+			<div class="container">
+				<a class="impressum-footer" href="../A-Impressum/index.html">Impressum</a>
+			</div>
+		</div>
+
+		<script lang="java-script">
+			const mmoAngebote = document.getElementById('mmo-angebote');
+			const mmcAngebote = document.getElementById('mmc-angebote');
+			const navAngebote = document.getElementById('nb-angebote');
+
+			mmoAngebote.addEventListener('click', () => {
+				navAngebote.classList.add('menu-btn');
+			})
+
+			mmcAngebote.addEventListener('click', () => {
+				navAngebote.classList.remove('menu-btn');
+			})
+		</script>
+	</body>
+</html>

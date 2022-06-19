@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap");
+/* Variables */
+:root {
+  --text-color: #f2f2f2;
+  --background-color: #000000;
+  --accent-green: #1AC914;
+  --accent-dark-gold: #daa520;
+  --accent-bright-gold: #ffde24;
+  --opposite-red: #e21313;
+  --oposite-blue: #137ace;
+}
+
+/* General CSS (for all html files) */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: 'League Gothic', sans-serif;
+}
+
+a {
+  color: var(--text-color);
+}
+
+/* Navigation bar settings/ properties */
+.header {
+  background-color: var(--accent-dark-gold);
+  padding: 1em;
+}
+
+.header .logo-picture {
+  width: 50px;
+  height: 50px;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.header .logo {
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.7em;
+  text-align: center;
+  margin-top: 0.7em;
+  margin-bottom: 0.3em;
+  margin-left: 3em;
+  position: absolute;
+}
+
+.header .logo-span {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header .navbar {
+  display: none;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  margin-top: -1em;
+}
+
+.header .mobile-menu {
+  cursor: pointer;
+}
+
+.navigation-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+/* Navbar opening and closing mechanic */
+#nb-home.menu-btn {
+  display: block;
+}
+
+#nb-speisekarte.menu-btn {
+  display: block;
+}
+
+#nb-angebote.menu-btn {
+  display: block;
+}
+
+#nb-oeffnungszeiten.menu-btn {
+  display: block;
+}
+
+#nb-kontakt.menu-btn {
+  display: block;
+}
+
+#nb-impressum.menu-btn {
+  display: block;
+}
+
+#nb-datenschutz.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: var(--accent-dark-gold);
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.navigation-items {
+  margin-top: 5em;
+}
+
+nav ul.navigation-items a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav ul.navigation-items a:hover {
+  text-decoration: underline;
+}
+
+.mobile-menu-close {
+  float: right;
+  margin: 0.2em;
+  cursor: pointer;
+  font-size: 2em;
+  color: var(--text-color);
+}
+
+.mobile-menu-open {
+  width: 2em;
+  height: 2em;
+  margin-top: 1.2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.footer {
+  text-align: left;
+}
+
+/* Specific CSS (for sepcific files) */
+/* 0-Home */
+#hero-home span {
+  color: var(--accent-dark-gold);
+}
+
+#hero-home h1 {
+  font-size: 1.5em;
+}
+
+#hero-home p {
+  font-size: 1em;
+}
+
+/* 1-Speisekarte */
+.hero .div-picture-1 {
+  width: 19%;
+  min-width: 200px;
+  height: 30em;
+  margin: 1em 0 0 0.5%;
+  float: left;
+  text-align: center;
+  text-align: center;
+  padding: 0;
+}
+
+.hero .picture-1 {
+  max-width: 100%;
+  max-height: 90%;
+}
+
+.footer #impressum-footer-speisekarte {
+  margin-top: 20em;
+  margin-right: 20em;
+}
+
+/* 2-Angebote */
+#action-days {
+  font-size: 2em;
+}
+
+.action-days-table {
+  font-size: 1.5em;
+}
+
+.action-days-dd {
+  color: var(--accent-dark-gold);
+}
+
+.offerings-info {
+  margin-top: -0.1em;
+  font-size: 0.6em;
+}
+
+#offering-info {
+  margin-top: -1em;
+}
+
+/* 3-Oeffnungszeiten */
+#oeffnungszeiten-dl {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.oeffnungszeiten-dd {
+  text-align: center;
+  color: var(--accent-dark-gold);
+}
+
+#oeffnungszeiten-header {
+  font-size: 1.8em;
+}
+
+.deliver-info {
+  font-size: 1em;
+}
+
+#deliver-info-1 {
+  margin-top: -1em;
+}
+
+/* 4-Kontakt */
+.hero iframe {
+  width: 90%;
+  height: 90%;
+  border-color: var(--accent-dark-gold);
+}
+
+.hero #adress-section #adress-header {
+  font-size: 1.8em;
+}
+
+.hero #adress-section #adress {
+  font-size: 1.3em;
+}
+
+.hero #phonenumber-section {
+  margin-top: 3em;
+}
+
+.hero #phonenumber-section #phonenumber-header {
+  font-size: 1.8em;
+}
+
+.hero #phonenumber-section #phonenumber {
+  font-size: 1.3em;
+}
+
+#impressum-footer-contact {
+  margin-bottom: 1em;
+}
+
+/* A-Impressum */
+#hero-impressum .container {
+  text-align: left;
+}
+
+#hero-impressum .container #german-impressum {
+  border-top: 1px solid var(--text-color);
+}
+
+#hero-impressum .container #english-impressum {
+  border-top: 1px solid var(--text-color);
+}
+
+#hero-impressum .container #german-impressum h2, #hero-impressum .container #english-impressum h2 {
+  font-size: 1.4em;
+}
+
+#hero-impressum .container #german-impressum h3, #hero-impressum .container #english-impressum h3 {
+  font-size: 1.2em;
+}
+
+#hero-impressum .container #german-impressum h4, #hero-impressum .container #english-impressum h4 {
+  font-size: 1.2em;
+}
+
+#hero-impressum .container #german-impressum p, #hero-impressum .container #english-impressum p {
+  font-size: 1em;
+}
+
+/* Responsive Design */
+/* For tablets or big phones */
+@media only screen and (min-width: 768px) {
+  .header .mobile-menu, .header .mobile-menu-close {
+    display: none;
+  }
+  .header .navigation-items {
+    font-size: 1em;
+  }
+  .header .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    margin-bottom: -1.258em;
+  }
+  .header .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .header .navbar .navigation-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 5em;
+  }
+  .header .navbar a {
+    color: #000000;
+    font-size: 1.5em;
+    margin-top: -3em;
+  }
+  .hero #adress-section #adress-header {
+    font-size: 2em;
+  }
+  .hero #adress-section #adress {
+    font-size: 1.5em;
+  }
+  .hero #phonenumber-section #phonenumber-header {
+    font-size: 2em;
+  }
+  .hero #phonenumber-section #phonenumber {
+    font-size: 1.5em;
+  }
+  .impressum-footer {
+    font-size: 1.3em;
+  }
+  /* Specific CSS (for sepcific files) */
+  /* 0-Home */
+  #hero-home h1 {
+    font-size: 2em;
+  }
+  #hero-home p {
+    font-size: 1.5em;
+  }
+  /* 2-Angebote */
+  #action-days {
+    font-size: 2.5em;
+  }
+  .action-days-table {
+    font-size: 2em;
+  }
+  /* 3-Oeffnungszeiten */
+  #oeffnungszeiten-dl {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .oeffnungszeiten-dd {
+    text-align: center;
+    color: var(--accent-dark-gold);
+  }
+  #oeffnungszeiten-header {
+    font-size: 2.1em;
+  }
+  .deliver-info {
+    font-size: 1.3em;
+  }
+  /* A-Impressum */
+  #hero-impressum .container {
+    text-align: left;
+  }
+  #hero-impressum .container #german-impressum {
+    border-top: 1px solid var(--text-color);
+  }
+  #hero-impressum .container #english-impressum {
+    border-top: 1px solid var(--text-color);
+  }
+  #hero-impressum .container #german-impressum h2, #hero-impressum .container #english-impressum h2 {
+    font-size: 1.7em;
+  }
+  #hero-impressum .container #german-impressum h3, #hero-impressum .container #english-impressum h3 {
+    font-size: 1.4em;
+  }
+  #hero-impressum .container #german-impressum h4, #hero-impressum .container #english-impressum h4 {
+    font-size: 1.5em;
+  }
+  #hero-impressum .container #german-impressum p, #hero-impressum .container #english-impressum p {
+    font-size: 1.3em;
+  }
+}
+
+/* For Laptops or big tablets */
+@media only screen and (min-width: 1080px) {
+  .hero .navigation-items {
+    font-size: 1em;
+  }
+  .hero .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .impressum-footer {
+    font-size: 1.5em;
+  }
+  /* Specific CSS (for sepcific files) */
+  /* 0-Home */
+  #hero-home h1 {
+    font-size: 2.5em;
+  }
+  #hero-home p {
+    font-size: 2em;
+  }
+  /* 1-Speisekarte */
+  /* 2-Angebote */
+  #action-days {
+    font-size: 3em;
+  }
+  .action-days-table {
+    font-size: 2.5em;
+  }
+  /* 3-Oeffnungszeiten */
+  #oeffnungszeiten-dl {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  .oeffnungszeiten-dd {
+    text-align: center;
+    color: var(--accent-dark-gold);
+  }
+  #oeffnungszeiten-header {
+    font-size: 2.4em;
+  }
+  .hero #adress-section #adress-header {
+    font-size: 2.2em;
+  }
+  .hero #adress-section #adress {
+    font-size: 1.8em;
+  }
+  .hero #phonenumber-section {
+    margin-top: 5em;
+  }
+  .hero #phonenumber-section #phonenumber-header {
+    font-size: 2.2em;
+  }
+  .hero #phonenumber-section #phonenumber {
+    font-size: 1.8em;
+  }
+  .deliver-info {
+    font-size: 1.6em;
+  }
+  /* A-Impressum */
+  #hero-impressum .container {
+    text-align: left;
+  }
+  #hero-impressum .container #german-impressum {
+    border-top: 1px solid var(--text-color);
+  }
+  #hero-impressum .container #english-impressum {
+    border-top: 1px solid var(--text-color);
+  }
+  #hero-impressum .container #german-impressum h2, #hero-impressum .container #english-impressum h2 {
+    font-size: 1.8em;
+  }
+  #hero-impressum .container #german-impressum h3, #hero-impressum .container #english-impressum h3 {
+    font-size: 1.5em;
+  }
+  #hero-impressum .container #german-impressum h4, #hero-impressum .container #english-impressum h4 {
+    font-size: 1.6em;
+  }
+  #hero-impressum .container #german-impressum p, #hero-impressum .container #english-impressum p {
+    font-size: 1.4em;
+  }
+}
+
+/* For Desktops or Tvs */
+@media only screen and (min-width: 1450px) {
+  .hero .navigation-items {
+    font-size: 1em;
+  }
+  .container {
+    width: 1450px;
+  }
+  .impressum-footer {
+    font-size: 2em;
+  }
+  /* Specific CSS (for sepcific files) */
+  /* 0-Home */
+  #hero-home h1 {
+    font-size: 3em;
+  }
+  #hero-home p {
+    font-size: 2.5em;
+  }
+  /* 1-Speisekarte */
+  /* 2-Angebote */
+  #action-days {
+    font-size: 3.5em;
+  }
+  .action-days-table {
+    font-size: 3em;
+  }
+  /* 3-Oeffnungszeiten */
+  #oeffnungszeiten-dl {
+    font-size: 2.1em;
+    text-align: center;
+  }
+  .oeffnungszeiten-dd {
+    text-align: center;
+    color: var(--accent-dark-gold);
+  }
+  #oeffnungszeiten-header {
+    font-size: 2.7em;
+  }
+  .deliver-info {
+    font-size: 2em;
+  }
+  /* 4-Kontakt */
+  .hero #adress-section #adress-header {
+    font-size: 2.5em;
+  }
+  .hero #adress-section #adress {
+    font-size: 2em;
+  }
+  .hero #phonenumber-section #phonenumber-header {
+    font-size: 2.5em;
+  }
+  .hero #phonenumber-section #phonenumber {
+    font-size: 2em;
+  }
+  /* A-Impressum */
+  #hero-impressum .container {
+    text-align: left;
+  }
+  #hero-impressum .container #german-impressum {
+    border-top: 1px solid var(--text-color);
+  }
+  #hero-impressum .container #english-impressum {
+    border-top: 1px solid var(--text-color);
+  }
+  #hero-impressum .container #german-impressum h2, #hero-impressum .container #english-impressum h2 {
+    font-size: 1.9em;
+  }
+  #hero-impressum .container #german-impressum h3, #hero-impressum .container #english-impressum h3 {
+    font-size: 1.6em;
+  }
+  #hero-impressum .container #german-impressum h4, #hero-impressum .container #english-impressum h4 {
+    font-size: 1.7em;
+  }
+  #hero-impressum .container #german-impressum p, #hero-impressum .container #english-impressum p {
+    font-size: 1.5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

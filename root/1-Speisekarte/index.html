@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Kebab Brothers | Speisekarte</title>
+		<link rel="stylesheet" type="text/css" href="../../stylesheets/main.css">
+		<link rel="stylesheet" type="text/css" href="../../stylesheets/External/lightbox.css">
+		<script src="../../code/External/jquery-1.7.2.min.js"></script>
+		<script src="../../code/External/lightbox.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<!-- Add a logo picture -->
+				<img class="logo-picture" src="../../assets/images/logo.jpg" alt="Kebab Brothers Logo">
+				<!-- Make a cool "logo" name -->
+				<a class="logo" href="../0-Home/index.html">Kebab <span class="logo-span">Brothers</span></a>
+				<!-- Create Hamburger Menu for small devices "#" -->
+				<img id="mmo-speisekarte" class="mobile-menu-open mobile-menu" src="../../assets/essentials/hamburger-menu.png" alt="Open Menu">
+				
+				<nav id="nb-speisekarte" class="navbar">
+					<!-- Create Close Element "X" -->
+					<p id="mmc-speisekarte" class="mobile-menu-close mobile-menu">X</p>
+					<ul class="navigation-items">
+						<li><a class="other-pages" href="../0-Home/index.html">Home</a></li>
+						<li><a class="current-page" href="#">Speisekarte</a></li>
+						<li><a class="other-pages" href="../2-Angebote/index.html">Angebote</a></li>
+						<li><a class="other-pages" href="../3-Oeffnungszeiten/index.html">Öffnungszeiten</a></li>
+						<li><a class="other-pages" href="../4-Kontakt/index.html">Kontakt</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		
+		<section class="hero">
+			<div class="container">
+				<div class="picture-section">
+					<div id="div-picture-1_0"class="div-picture-1">
+						<a href="../../assets/images/speisekarte-0.jpg" rel="lightbox">
+							<img id="picture-1_0" class="picture-1" src="../../assets/images/speisekarte-0.jpg" alt="Speisekarte-0 Picture"></a>
+					</div>
+					<div id="div-picture-1_1" class="div-picture-1">
+						<a href="../../assets/images/speisekarte-1.jpg" rel="lightbox">
+							<img id="picture-1_1" class="picture-1" src="../../assets/images/speisekarte-1.jpg" alt="Speisekarte-1 Picture"></a>
+					</div>
+					<div id="div-picture-1_2" class="div-picture-1">
+						<a href="../../assets/images/speisekarte-2.jpg" rel="lightbox">
+							<img id="picture-1_2" class="picture-1" src="../../assets/images/speisekarte-2.jpg" alt="Speisekarte-2 Picture"></a>
+					</div>
+					<div id="div-picture-1_3" class="div-picture-1">
+						<a href="../../assets/images/speisekarte-3.jpg" rel="lightbox">
+							<img id="picture-1_3" class="picture-1" src="../../assets/images/speisekarte-3.jpg" alt="Speisekarte-3 Picture"></a>
+					</div>
+					<div id="div-picture-1_4" class="div-picture-1">
+						<a href="../../assets/images/speisekarte-4.jpg" rel="lightbox">
+							<img id="picture-1_4" class="picture-1" src="../../assets/images/speisekarte-4.jpg" alt="Speisekarte-4 Picture"></a>
+					</div>
+					<div id="div-picture-1_5" class="div-picture-1">
+						<a href="../../assets/images/speisekarte-5.jpg" rel="lightbox">
+							<img id="picture-1_5" class="picture-1" src="../../assets/images/speisekarte-5.jpg" alt="Speisekarte-5 Picture"></a>
+					</div>
+					<div id="div-picture-1_6" class="div-picture-1">
+						<a href="../../assets/images/speisekarte-6.jpg" rel="lightbox">
+							<img id="picture-1_6" class="picture-1" src="../../assets/images/speisekarte-6.jpg" alt="Speisekarte-6 Picture"></a>
+					</div>
+					<div id="div-picture-1_7" class="div-picture-1">
+						<a href="../../assets/images/speisekarte-7.jpg" rel="lightbox">
+							<img id="picture-1_7" class="picture-1" src="../../assets/images/speisekarte-7.jpg" alt="Speisekarte-7 Picture"></a>
+					</div>
+				</div>
+				
+				<!-- Create request: input meal, output number -->
+			</div>
+		</div>
+		
+		<section id="footer-speisekarte" class="footer">
+			<div class="container">
+				<a id="impressum-footer-speisekarte" class="impressum-footer" href="../A-Impressum/index.html">Impressum</a>
+			</div>
+		</section>
+
+		<script lang="java-script">
+			const mmoSpeisekarte = document.getElementById('mmo-speisekarte');
+			const mmcSpeisekarte = document.getElementById('mmc-speisekarte');
+			const navSpeisekarte = document.getElementById('nb-speisekarte');
+
+			mmoSpeisekarte.addEventListener('click', () => {
+				navSpeisekarte.classList.add('menu-btn');
+			})
+
+			mmcSpeisekarte.addEventListener('click', () => {
+				navSpeisekarte.classList.remove('menu-btn');
+			})
+		</script>
+	</body>
+</html>
